@@ -1,0 +1,41 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.dmg-read-more {
+	&__pagination {
+		display: flex;
+		justify-content: space-between;
+
+		button {
+			background: #000000;
+			color: #ffffff;
+
+			&:hover {
+				color: #cccccc;
+			}
+
+			&:disabled {
+				&:hover {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+
+	&__posts {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 1rem;
+
+		button {
+			border-bottom: 1px solid #000000;
+
+			&:only-of-type, &:last-of-type {
+				border-bottom: 0;
+			}
+		}
+	}
+}
