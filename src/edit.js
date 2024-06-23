@@ -53,7 +53,7 @@ const Edit = ({ attributes, setAttributes }) => {
 							<Button key={post.id} onClick={() => onSelectPost(post)}>
 								{post.title.rendered}
 							</Button>
-						)) : <span>No posts found.</span>}
+						)) : <span>{__("No posts found.", "dmg-read-more")}</span>}
 					</div>
 					{posts?.length > 0 && (
 						<div className="dmg-read-more__pagination">
