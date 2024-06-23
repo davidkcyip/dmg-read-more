@@ -74,7 +74,7 @@ const Edit = ({
   }, posts?.length > 0 ? posts?.map(post => (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.Button, {
     key: post.id,
     onClick: () => onSelectPost(post)
-  }, post.title.rendered)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, "No posts found.")), posts?.length > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, post.title.rendered)) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("No posts found.", "dmg-read-more"))), posts?.length > 0 && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "dmg-read-more__pagination"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__.Button, {
     onClick: () => setPage(page - 1),
